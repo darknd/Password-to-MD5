@@ -1,0 +1,32 @@
+<html>
+<head>
+  <title>Password to MD5</title>
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<div align='center'>
+<form method='POST' action='http://it64.es/cifrado/' >
+<table>
+  <tr>
+    <td> Contraseña <input style='margin-top:2em;' type='password' size='30' name='pass' id='pass'></td>
+  </tr>
+  <tr>
+    <td align='center'><button style='margin-top:1em;' class="btn btn-success"> Convertir MD5 </button></td>
+    <tr>
+      <td><?php global $f3; if(!empty($f3->pass_md5)) echo "<br><center>".$f3->pass_md5."</center>"; ?></td>
+    </tr>
+  </table>
+</form>
+</center>
+
+</head>
+<body>
+
+</body>
+</html>
